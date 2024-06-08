@@ -3,12 +3,14 @@ My Codesoft Task GIthub Repo For showcasing Machine Learning Projects I have wor
 
 # Movie Genre Classification Project
 
-![Movie Genre Classification](https://images.unsplash.com/photo-1510597571192-6b9311c7b3fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNjYzOTV8MHwxfGFsbHwyfHx8fHx8fHwxNjg2MDE3NzE2&ixlib=rb-4.0.3&q=80&w=1080)
+<img src="https://images.unsplash.com/photo-1512070679279-8988d32161be?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Movie Genre Classification Project" width="500">
+
 
 ## Overview
 
 Welcome to my movie genre classification project, completed as part of the CODSOFT machine learning internship(TASK 1). The goal of this project is to build a machine learning model that predicts the genre of a movie based on its plot summary. We will be using various machine learning techniques including Naive Bayes, Logistic Regression, Support Vector Machines, Random Forest, and Gradient Boosting.
-![Colab Notebook Screenshot](./images/colab_notebook_screenshot.png)
+<img src="./images/colab_notebook_screenshot.png" alt="Colab Notebook Screenshot" width="500">
+
 
 ## Table of Contents
 
@@ -17,6 +19,9 @@ Welcome to my movie genre classification project, completed as part of the CODSO
 - [Features](#features)
 - [Models](#models)
 - [Evaluation](#evaluation)
+- [Data Preprocessing](#Data_Preprocessing)
+- [Model Training and Evaluation](#Model_Training_and_Evaluation)
+- [Visualizations](#Visualizations)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
@@ -39,22 +44,25 @@ The following machine learning models were used in this project:
 1. **Naive Bayes**
 2. **Logistic Regression**
 3. **Support Vector Machine (SVM)**
-4. **Random Forest**
-5. **Gradient Boosting**
+4. **Random Forest** (ensemble model)
+5. **Gradient Boosting** (ensemble model)
 
 ## Evaluation
 
-The models were evaluated using accuracy, classification reports, and confusion matrices. Hyperparameter tuning and cross-validation were also performed to ensure the robustness of the models.
+The models were evaluated using accuracy, classification reports, and confusion matrices. Hyperparameter tuning, Train ensemble models and cross-validation were also performed to ensure the robustness of the models.
 
 ## Data Preprocessing
+
 Text data is preprocessed by converting to lowercase, removing punctuation, tokenizing, and removing stopwords.
 
 ## Model Training and Evaluation
+
 Multiple models are trained, evaluated, and compared. Below is the confusion matrix for the Logistic Regression model:
 
 ![Confusion Matrix](./images/confusion_matrix.png)
 
-## Visualizations
+## - [Evaluation](#evaluation)
+
 Various visualizations are created to analyze the model's performance:
 
 ![Other Visualizations](./images/other_visualizations.png)
@@ -74,11 +82,40 @@ To run this project locally, follow these steps:
 
     Create a virtual environment and install the necessary dependencies.
 
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    pip install -r requirements.txt
-    ```
+        .A Create a virtual environment:
+            ```sh
+            python -m venv venv
+            ```
+
+        .B Activate the virtual environment:
+            - On Windows:
+                ```sh
+                venv\Scripts\activate
+                ```
+            - On macOS/Linux:
+                ```sh
+                source venv/bin/activate
+                ```
+
+        .C Install the necessary packages:
+            ```sh
+            pip install -r requirements.txt
+            ```
+
+        .D Ensure your Jupyter notebook uses the correct kernel:
+            ```sh
+            python -m ipykernel install --user --name=venv
+            ```
+            OR
+
+         . Start Jupyter Notebook:
+            ```sh
+            jupyter notebook
+            ```
+         . Select the `venv` kernel in Jupyter Notebook:
+            - Open your Jupyter Notebook.
+            - Click on `Kernel` > `Change kernel` > `venv`.
+            
 
     _Note: Ensure you have a `requirements.txt` file listing all the necessary libraries._
 
@@ -114,7 +151,16 @@ This project demonstrates the use of various machine learning techniques for tex
 
 Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/chukwuemeka-agomoh-68726524b) or via email at emyagomoh54321@gmail.com for any questions or collaborations.
 
-![Machine Learning](https://images.unsplash.com/photo-1581091223431-1c349890ad54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNjYzOTV8MHwxfGFsbHwxfHx8fHx8fHwxNjg2MDE3ODAw&ixlib=rb-4.0.3&q=80&w=1080)
-![Movies](https://images.unsplash.com/photo-1542206395-9feb3edaa68f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNjYzOTV8MHwxfGFsbHwzfHx8fHx8fHwxNjg2MDE3ODU0&ixlib=rb-4.0.3&q=80&w=1080)
-![Genres](https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNjYzOTV8MHwxfGFsbHw0fHx8fHx8fHwxNjg2MDE3OTI5&ixlib=rb-4.0.3&q=80&w=1080)
-![GitHub](https://images.unsplash.com/photo-1614310038761-7f3563f2509e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyNjYzOTV8MHwxfGFsbHw1fHx8fHx8fHwxNjg2MDE3OTg3&ixlib=rb-4.0.3&q=80&w=1080)
+## Images
+
+### Machine Learning
+<img src="https://images.unsplash.com/photo-1591453089816-0fbb971b454c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Machine Learning" width="500">
+
+### Movies
+<img src="https://images.unsplash.com/photo-1616530940355-351fabd9524b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Movies" width="500">
+
+### Genres
+<img src="https://i.pinimg.com/originals/8e/f6/99/8ef699a7f1fc424156d6b70dd0131511.jpg" alt="Genres" width="500">
+
+### GitHub
+<img src="https://images.unsplash.com/photo-1654277041218-84424c78f0ae?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="GitHub" width="500">
