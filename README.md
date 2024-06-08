@@ -82,42 +82,43 @@ To run this project locally, follow these steps:
 
     Create a virtual environment and install the necessary dependencies.
 
-        .A Create a virtual environment:
-            ```bash
-            python -m venv venv
-            ```
+    .A Create a virtual environment:
+    ```bash
+    python -m venv venv
+    ```
 
-        .B Activate the virtual environment:
-            - On Windows:
+    .B Activate the virtual environment:
+    
+    - On Windows:
+    ```bash
+    venv\Scripts\activate
+    ```
+    
+    - On macOS/Linux:
+    ```bash
+    source venv/bin/activate
+    ```
 
-                ```bash
-                venv\Scripts\activate
-                ```
-            - On macOS/Linux:
-            
-                ```bash
-                source venv/bin/activate
-                ```
+    .C Install the necessary packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-        .C Install the necessary packages:
-            ```bash
-            pip install -r requirements.txt
-            ```
+    .D Ensure your Jupyter notebook uses the correct kernel:
+    ```bash
+    python -m ipykernel install --user --name=venv
+    ```
+    
+    OR
 
-        .D Ensure your Jupyter notebook uses the correct kernel:
-            ```bash
-            python -m ipykernel install --user --name=venv
-            ```
-            OR
+    Start Jupyter Notebook:
+    ```bash
+    jupyter notebook
+    ```
 
-         . Start Jupyter Notebook:
-            ```bash
-            jupyter notebook
-            ```
-         . Select the `venv` kernel in Jupyter Notebook:
-            - Open your Jupyter Notebook.
-            - Click on `Kernel` > `Change kernel` > `venv`.
-            
+    Select the `venv` kernel in Jupyter Notebook:
+    - Open your Jupyter Notebook.
+    - Click on `Kernel` > `Change kernel` > `venv`.
 
     _Note: Ensure you have a `requirements.txt` file listing all the necessary libraries._
 
