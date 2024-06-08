@@ -83,33 +83,35 @@ To run this project locally, follow these steps:
     Create a virtual environment and install the necessary dependencies.
 
         .A Create a virtual environment:
-            ```sh
+            ```bash
             python -m venv venv
             ```
 
         .B Activate the virtual environment:
             - On Windows:
-                ```sh
+
+                ```bash
                 venv\Scripts\activate
                 ```
             - On macOS/Linux:
-                ```sh
+            
+                ```bash
                 source venv/bin/activate
                 ```
 
         .C Install the necessary packages:
-            ```sh
+            ```bash
             pip install -r requirements.txt
             ```
 
         .D Ensure your Jupyter notebook uses the correct kernel:
-            ```sh
+            ```bash
             python -m ipykernel install --user --name=venv
             ```
             OR
 
          . Start Jupyter Notebook:
-            ```sh
+            ```bash
             jupyter notebook
             ```
          . Select the `venv` kernel in Jupyter Notebook:
