@@ -91,7 +91,7 @@ To run this project locally, follow these steps:
     
     - On Windows:
     ```bash
-    venv\Scripts\activate
+    .\.venv\Scripts\activate
     ```
     
     - On macOS/Linux:
